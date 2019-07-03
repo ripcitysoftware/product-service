@@ -1,3 +1,0 @@
-[submodule "src/main/liquibase"]
-	path = src/main/liquibase
-	url = git@localhost:macInfinity/product-db.git
