@@ -14,7 +14,7 @@ COPY startup.sh /app
 RUN chmod 755 /app/startup.sh
 
 HEALTHCHECK --interval=5m --timeout=3s \
-  CMD curl -f http://localhost:8080/actuator/health
+  CMD wget --quiet --tries=1 --spider http://localhost:8080/actuator/health || exit 1
 
 ENTRYPOINT /app/startup.sh
 
