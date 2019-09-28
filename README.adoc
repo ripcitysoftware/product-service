@@ -20,7 +20,7 @@ In order to checkout this project, with it's submodules, you'll need to use the 
 
 [source,bash]
 ----
-git clone --recurse-submodules git@github.com:macInfinity/product-service.git
+git clone --recurse-submodules git@github.com:ripcitysoftware/product-service.git
 ----
 
 == Run DB only
@@ -52,8 +52,8 @@ Here are a few useful `docker` aliases. These aliases are a good alternative to 
 
 [source,bash]
 ----
-alias dpta='docker ps --all --format "table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"' <1>
-alias dpt='docker ps --format "table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"' <2>
+alias dpta='docker ps --all --format "table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"' # <1>
+alias dpt='docker ps --format "table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"' # <2>
 ----
 <1> All running and stopped docker containers.
 
