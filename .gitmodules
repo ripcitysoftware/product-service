@@ -1,3 +1,4 @@
 [submodule "src/main/liquibase"]
 	path = src/main/liquibase
 	url =  git@github.com:ripcitysoftware/product-service-db.git
+	update = merge
