@@ -109,6 +109,4 @@ done
 
 [[ $stop -eq 1 ]] && stop_all && exit 0
 
-[[ $build -eq 1 ]] && build && exit 0
-
 [[ $logging -eq 1 ]] && log_output && exit 0
